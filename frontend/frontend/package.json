@@ -1,0 +1,77 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "core-js": "^2.6.5",
+    "emailjs-com": "^2.6.3",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.12.0",
+    "@vue/cli-plugin-eslint": "^3.12.0",
+    "@vue/cli-service": "^3.12.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-cli-plugin-postcss-precss": "^1.0.1",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-assets": false,
+      "postcss-import": {},
+      "postcss-extend-rule": {},
+      "postcss-advanced-variables": {},
+      "postcss-plugin-bem-atrule": {
+        "defaultNamespace": "el",
+        "style": "suit",
+        "separators": {
+          "descendent": "__",
+          "modifier": "--"
+        },
+        "shortcuts": {
+          "utility": "util",
+          "component": "b",
+          "modifier": "m",
+          "descendent": "e"
+        }
+      },
+      "postcss-preset-env": {
+        "stage": 2
+      },
+      "postcss-atroot": {},
+      "postcss-property-lookup": {},
+      "postcss-nested": {},
+      "postcss-nested-ancestors": {},
+      "postcss-calc": {},
+      "postcss-sass-color-functions": {},
+      "lost": false,
+      "postcss-utils": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
